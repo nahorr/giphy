@@ -43,6 +43,5 @@ class GiphyServiceProvider extends ServiceProvider
         ], 'assets');
 
 
-    // Translations
     }
 }
