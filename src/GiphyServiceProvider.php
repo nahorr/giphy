@@ -15,6 +15,7 @@ class GiphyServiceProvider extends ServiceProvider
     {
         // register our controller
         $this->app->make('Nahorr\Giphy\GiphyController');
+        $this->loadViewsFrom(__DIR__.'/views', 'giphy');
 
 
     }
@@ -28,13 +29,18 @@ class GiphyServiceProvider extends ServiceProvider
     {
        //Register Routes
        include __DIR__.'/routes.php';
-       $this->loadViewsFrom(__DIR__.'/views', 'giphy');
-       $this->publishes([
+
+       /* $this->publishes([
 
             // Views
             __DIR__.'/../resources/views/search.blade.php' => resource_path('views/vendor/nnamdi/search.blade.php'),
 
-        ]);
+        ]); */
+
+        $this->publishes([
+            __DIR__.'/../views/' => base_path('resources/views/vendor/giphy'),
+
+        ], 'assets');
 
 
     // Translations
