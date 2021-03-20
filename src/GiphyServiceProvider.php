@@ -30,7 +30,13 @@ class GiphyServiceProvider extends ServiceProvider
        include __DIR__.'/routes.php';
        $this->loadViewsFrom(__DIR__.'/views', 'giphy');
        $this->publishes([
-        __DIR__.'/../resources/views' => resource_path('views/vendor/nnamdi/giphy'),
-    ]);
+
+            // Views
+            __DIR__.'/../resources/views/search.blade.php' => resource_path('views/vendor/nnamdi/search.blade.php'),
+
+        ]);
+
+
+    // Translations
     }
 }
