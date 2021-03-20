@@ -1,0 +1,11 @@
+{
+    "name": "nnamdi/giphy",
+    "description": "giphy project for testing",
+    "authors": [
+        {
+            "name": "Nnamdi Okeke",
+            "email": "nahorr@gmail.com"
+        }
+    ],
+    "require": {}
+}
