@@ -1,11 +1,19 @@
 {
     "name": "nnamdi/giphy",
-    "description": "giphy project for testing",
+    "description": "Giphy search Laravel Package",
+    "type": "project",
+    "license": "MIT",
     "authors": [
         {
             "name": "Nnamdi Okeke",
             "email": "nahorr@gmail.com"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "Nahorr\\Giphy\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
     "require": {}
 }
